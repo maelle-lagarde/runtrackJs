@@ -1,5 +1,5 @@
 body {
-    background-color: #F2B3BE;
+    background: linear-gradient(90deg, #e8aabe, #a7e0e0);;
 }
 
 .container {
@@ -12,16 +12,52 @@ body {
 }
 
 #konami-logo {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 #konami-code {
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 h1 {
+    padding-top: 40px;
+    color: #e8aabe;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
+}
+
+.shape::before {
+    position: absolute;
+    content: "";
+    left: 31%;
+    top: 20%;
+    width: 700px;
+    height: 500px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@keyframes sliderShape{
+    0%,100%{
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
 }
 
