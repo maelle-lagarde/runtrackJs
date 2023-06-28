@@ -12,7 +12,7 @@ body {
 }
 
 #konami-logo {
-    padding-top: 40px;
+    margin-top: 60px;
 }
 
 #konami-code {
@@ -60,4 +60,3 @@ h1 {
         transform: translate3d(0,-3px,0) rotateZ(0.01deg);
     }
 }
-

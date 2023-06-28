@@ -5,6 +5,8 @@ function konami() {
     function checkCode() {
         if (konamiCodePosition.toString() === konamiCode.toString()) {
             document.body.style.background = '#EBBF52';
+            document.getElementById("title").style.color = "#EBBF52";
+
         }
         konamiCodePosition = [];
     }
