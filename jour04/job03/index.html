@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    <title>Pokemon Filter</title>
+</head>
+<body>
+
+    <form id="filterForm">
+
+        <label for="id">ID :</label>
+        <input type="text" id="id" name="id"><br>
+
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="type">Type :</label>
+        <select id="type" name="type">
+            <option value="">Tous</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+            <option value="poison">Poison</option>
+            <option value="flying">Flying</option>
+            <option value="bug">Bug</option>
+            <option value="electric">Electric</option>
+            <option value="ground">Ground</option>
+            <option value="fairy">Fairy</option>
+            <option value="fighting">Fighting</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="steel">Steel</option>
+            <option value="ice">Ice</option>
+            <option value="ghost">Ghost</option>
+            <option value="dragon">Dragon</option>
+            <option value="normal">Normal</option>
+        </select><br>
+        <input type="button" value="Filtrer" onclick="filterData()">
+    </form>
+
+    <div id="results"></div>
+
+</body>
+</html>
