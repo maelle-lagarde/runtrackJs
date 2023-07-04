@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     <title>Pokemon Filter</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 
         <label for="type">Type :</label>
         <select id="type" name="type">
-            <option value="">Tous</option>
+            <option value="">All</option>
             <option value="fire">Fire</option>
             <option value="water">Water</option>
             <option value="grass">Grass</option>
@@ -37,7 +37,7 @@
             <option value="dragon">Dragon</option>
             <option value="normal">Normal</option>
         </select><br>
-        <input type="button" value="Filtrer" onclick="filterData()">
+        <input type="button" value="Filter" onclick="filterData()">
     </form>
 
     <div id="results"></div>
